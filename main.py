@@ -21,7 +21,7 @@ class Tour(Resource):
 
         return "Відсутні подорожі"
 
-    def tour(self):
+    def post(self):
         parser = reqparse.RequestParser()
         parser.add_argument("country")
         parser.add_argument("price")
